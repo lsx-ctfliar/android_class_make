@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/shape_gradient">
+
+        <TextView
+            android:id="@+id/dcourse_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="课程名称"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:id="@+id/dschool"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="桂林电子科技大学"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="课号:"
+                android:textSize="20sp"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/dcourse_id"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="88"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="25sp"
+            android:layout_weight="0.2"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:text="课程介绍" />
+
+        <TextView
+            android:id="@+id/dcourse_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/textview_border"
+            android:text="课程介绍"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/bc1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="课程开始时间:"/>
+            <TextView
+                android:id="@+id/starttime"
+                android:layout_width="match_parent"
+                android:text="starttime"
+                android:layout_marginLeft="8dp"
+                android:layout_height="40dp"
+                android:padding="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="课程结束时间:"/>
+            <TextView
+                android:id="@+id/endtime"
+                android:layout_width="match_parent"
+                android:text="endtime"
+                android:layout_marginLeft="8dp"
+                android:padding="3dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="用户名:"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:text="username"
+            android:padding="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="真实姓名:"/>
+        <TextView
+            android:id="@+id/realname"
+            android:layout_width="match_parent"
+            android:text="realname"
+            android:layout_marginLeft="8dp"
+            android:padding="3dp"
+            android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="课程创建时间:"/>
+        <TextView
+            android:id="@+id/createtime"
+            android:layout_width="match_parent"
+            android:text="createtime"
+            android:layout_marginLeft="8dp"
+            android:padding="3dp"
+            android:layout_height="40dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--若已选课程则加入课程按钮变为已加课程-->
+    <Button
+        android:id="@+id/dadd_course"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:textSize="32sp"
+        android:text="加入课程"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="你已添加课程"
+        android:visibility="gone"
+        android:textSize="32sp"
+        android:gravity="center"/>
+</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    app:cardCornerRadius="3dp">
+
+
+    <LinearLayout
+        android:id="@+id/item_courses_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/bcImage"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/add_image"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bcImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="课程名称"
+            android:textColor="?colorPrimary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/courseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="课程编号"
+            android:textColor="?colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/collegeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseId"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="学校姓名"
+            android:textColor="#799592"
+            android:textSize="18sp" />
+<!--        <Button-->
+<!--            android:id="@+id/icb"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            />-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

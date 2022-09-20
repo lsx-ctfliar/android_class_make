@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.classMain.QiandaoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="135dp"
+            android:gravity="center"
+            android:text="签到列表"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sign_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:background="#EEEFF1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ListView
+            android:id="@+id/qiandao_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="650dp"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="15dp"-->
+<!--        tools:layout_editor_absoluteY="65dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/qiandao_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:text="课程名称："-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/Sign_courseName"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="28dp"-->
+<!--                android:layout_marginLeft="90dp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="上课地点："-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/Sign_Addr"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_marginLeft="90dp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:text="发起签到时间："-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/Sign_time"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_marginLeft="120dp"-->
+<!--                android:layout_marginTop="40dp" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

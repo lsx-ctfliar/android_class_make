@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.classMain.TeacherCourseRegisterActivity"
+    >
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="课程名："
+        tools:ignore="Deprecated,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/courseAddr"
+        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:hint="上课地点："
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="Deprecated,MissingConstraints"
+        />
+
+
+    <EditText
+        android:id="@+id/signCode"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:hint="签到码:"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="Deprecated,MissingConstraints"
+        />
+    <EditText
+        android:id="@+id/total"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:hint="选课人数:"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="Deprecated,MissingConstraints"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:text="课程开始时间:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/et_startTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="点击选择年月日" />
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="240dp"
+            android:text="课程结束时间:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_endTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="230dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginEnd="48dp"
+            android:text="点击选择年月日"
+            android:gravity="center"/>
+    <Button
+        android:id="@+id/button"
+        android:text="发起签到"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="Deprecated" />
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

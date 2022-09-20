@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ebebeb">
+<!--    个人信息-->
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+    <RelativeLayout
+        android:id="@+id/re_userName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/image1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/avatar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textColor="#353535"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/user_realName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="saber"
+                android:textColor="#353535"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/avatar"
+            android:text="账号:"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/user_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/avatar"
+            android:text="chenlitao"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_two"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+<!--    缓存课程-->
+    <RelativeLayout
+        android:id="@+id/re_xiangce"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="65dp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+        <ImageView
+            android:id="@+id/iv_xiangce"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_cloud_download_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_xiangce"
+            android:text="缓存课程"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+    </RelativeLayout>
+<!--    收藏课程-->
+    <RelativeLayout
+        android:id="@+id/re_aboutwe"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/iv_shoucang"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_shoucang"
+            android:text="收藏课程"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_four"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+<!--    意见反馈-->
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/re_help"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/iv_money_bag"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_contact_support_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_money_bag"
+            android:text="帮助与反馈"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    修改信息-->
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_three"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+    <RelativeLayout
+        android:id="@+id/update_info"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_update_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_setting"
+            android:text="修改信息"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:clickable="true">
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/log_off"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="20dp"></Button>
+    </RelativeLayout>
+
+
+</LinearLayout>

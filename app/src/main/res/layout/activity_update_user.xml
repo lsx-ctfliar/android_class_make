@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+<!--    修改资料-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/purple_200">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <View
+            android:id="@+id/view_temp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="#14191A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/view_temp"
+            android:text="修改资料"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+<!--    头像-->
+    <RelativeLayout
+        android:id="@+id/re_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/tv_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    昵称-->
+    <RelativeLayout
+        android:background="@drawable/shape"
+        android:id="@+id/re_userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/userName"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="xxx"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_two"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="5dp" >
+
+<!--    所在学校-->
+    <RelativeLayout
+        android:id="@+id/re_collegeName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/collegeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="所在学校"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_collegeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/collegeName"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="桂林电子科技大学"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    真实姓名-->
+    <RelativeLayout
+        android:id="@+id/re_realName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/realName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="真实姓名"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_realName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/realName"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    学/工号-->
+    <RelativeLayout
+        android:id="@+id/re_idNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:layout_marginTop="120dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/idNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="学/工号"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_idNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/idNumber"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    性别-->
+    <RelativeLayout
+        android:id="@+id/re_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:layout_marginTop="180dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/gender"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="男"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+    </RelativeLayout>
+<!--   电话-->
+    <RelativeLayout
+        android:id="@+id/re_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:layout_marginTop="230dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="电话"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/phone"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="123132"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    邮箱-->
+    <RelativeLayout
+        android:id="@+id/re_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="邮箱"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/email"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=".com"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    注册时间-->
+    <RelativeLayout
+        android:id="@+id/re_inSchoolTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:layout_marginTop="330dp"
+        android:background="@drawable/shape"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/inSchoolTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="注册时间"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_inSchoolTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/inSchoolTime"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="151353"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+<!--    保存-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="380dp">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/purple_200"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
